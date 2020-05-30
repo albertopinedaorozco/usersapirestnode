@@ -1,0 +1,35 @@
+{
+  "name": "apirestnodejs",
+  "version": "1.0.0",
+  "description": "NodeJS api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "nodejs",
+    "js"
+  ],
+  "author": "jestrade",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nocache": "^2.1.0",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.3"
+  }
+}
