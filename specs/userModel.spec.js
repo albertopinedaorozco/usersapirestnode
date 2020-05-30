@@ -4,6 +4,6 @@ describe('User Model', () => {
     it('New User', () => {
       const user = {"username":"username", "password":"password"};
       users.newUser(user);
-      expect(users.arrayLenght()).toEqual(1);
+      expect(users.arrayLenght()).toEqual(2);
     });
   });
