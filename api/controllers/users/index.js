@@ -11,6 +11,7 @@ const router = express.Router();
 
 router.route('/')
     .get((req, res)=>{
+        myUndefinedFunction();
         const list = users.getUsers();
         res.send(list);
     })
