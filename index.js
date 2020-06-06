@@ -8,7 +8,14 @@ const config = require('./config');
 
 Sentry.init({ dsn: 'https://63565143d5d942db9eead42daf7a194c@o403579.ingest.sentry.io/5266427' });
 
+
 const app = express();
+
+// The request handler must be the first middleware on the app
+app.use(Sentry.Handlers.requestHandler());
+// The error handler must be before any other error middleware
+app.use(Sentry.Handlers.errorHandler());
+
 app.use(express.json());
 app.use('/api', api);
 
